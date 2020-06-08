@@ -1,0 +1,304 @@
+/*NAVIGATION BAR*/
+
+/*---Navbar02------/
+/* Add a black background color to the top navigation */
+.topnav input
+{
+    float: right;
+}
+.topnav form
+{
+    position: absolute;
+    display: inline;
+    padding-top: 15px;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    padding-top: 20px ;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+/*---Background Split Picture*/
+#horizontal_image
+{
+  width: 100%;
+  height: auto;
+}
+.container-fluid{
+  width: 100%;
+  height: 470px;
+  background: white;
+  overflow: hidden;
+  position: absolute;
+    display: block;
+    float: left;
+    object-fit: cover;
+}
+.container-fluid .diagonal {
+  height: 1200px;
+  width: 640px;
+  overflow: hidden;
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  position: absolute;
+  top: -200px;
+}
+.container-fluid .diagonal img {
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  margin-top: -100px;
+  margin-left: -200px;
+}
+.container-fluid .diagonal .overlay {
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  height: 1980px;
+  width: 1500px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: black;
+  opacity: 0;
+  color: white;
+  transition: .5s;
+  -webkit-transition: opacity 0.5s;
+  vertical-align: middle;
+  text-align: center;
+}
+.container-fluid .diagonal .overlay:hover {
+  opacity: .8;
+}
+.container-fluid .diagonal#d0 {
+  left: -260px;
+}
+.container-fluid .diagonal#d1 {
+  left: 450px;
+}
+.container-fluid .diagonal#d2 {
+  left: 1160px;
+}
+.container-fluid .diagonal#d3 {
+  left: 1870px;
+}
+/*------About-----*/
+#about
+{
+    padding-top: 500px;
+    padding-bottom: 50px;
+    color: #555;
+    background-color: #f9c648;
+}
+.about-title h2
+{
+    font-size: 2.3vw;
+}
+.about-content
+{
+   padding: 20px;
+   text-align:justify;
+   font-family: sans-serif;
+   font-size: 1.5vw; 
+}
+.about-title
+{
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+#about img
+{
+    width: 15%;
+    height: auto;
+    display: block;
+}
+/*---Isi Rekomendasi----*/
+#services
+{
+    background-size:cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    background-color: #ececea;
+
+}
+#services h1
+{
+    text-align: center;
+    color: black !important;
+    padding-bottom: 20px;
+}
+#services .h1
+{
+    text-align: center;
+}
+.row .col .card
+{
+  border-radius: 30px;
+}
+.card
+{
+  margin: 10px auto;
+  display: none;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  transition: 0.5s;
+}
+.card-body
+{
+  background-color: #5d7283;
+}
+.card-body h5
+{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.card-text
+{
+    color: black;
+    font-size: 12px;
+}
+.card-body a
+{
+    text-align: right;
+    margin-top: 20px;
+}
+.card-body a:hover
+{
+    background: green;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+/*--Promo--*/
+#rec_promo
+{
+    background-size:cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    background-color: #ed9355;
+}
+#rec_promo h1
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 20px;
+}
+#rec_promo p
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 20px;
+}
+.row .col .card01
+{
+  border-radius: 30px;
+}
+.card01
+{
+  margin: 10px auto;
+  float: left;
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 30px;
+}
+.card01-body
+{
+  text-align: center;
+  background-color: #f9c647;
+  color: black;
+}
+
+/*--ArtikelCSS---*/
+#artikel
+{
+    background-size:cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    background-color: #edecea;
+}
+#artikel h1
+{
+  text-align: center;
+  color: black !important;
+  padding-bottom: 20px;
+}
+
+.content-box
+{
+    width: 100%;
+    height: 200px;
+    max-height: auto;
+    position: relative;
+    background: #c9c9c9;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    opacity: 0.9;
+    display: block;
+    margin-bottom: 30px;
+}
+.content-box img
+{
+  width: 200px;
+  height: 200px;
+}
+.content
+{
+  margin-left: 10px;
+  position: absolute;
+  color: black;
+  display: inline-block;
+}
+.content p
+{
+  margin-left: 5px;
+}

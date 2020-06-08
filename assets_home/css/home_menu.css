@@ -1,0 +1,153 @@
+/*--  css --*/
+@font-face{
+  font-family: 'montserrat_01';
+  src:url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'bebasNeue';
+  src:url('../fonts/BebasNeue-Regular.woff') format('woff'),
+  url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'BigNoodle';
+  src:url('/fonts/Objective-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: white;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.bp-header{
+  background: black;
+}
+.sidebar img{
+    position: relative;
+    background-color:;
+}
+
+.sidebar{
+  position: absolute;
+  width: 17vw;
+  height: 100%;
+  background:	#f26118;
+}
+.sidebar header{
+  text-align: center;
+  padding: 20px;
+  background-color: #f27e44;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 1.4vw;
+  color: white;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid grey;
+  font-family: "BebasNeue";
+}
+ul li:hover a{
+  color:rgb(30, 228, 30);
+}
+ul li:active a{
+  color: grey;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+
+/*------------------------------------------------------------------
+    Menu AREA
+-------------------------------------------------------------------*/
+.gal-container{
+  margin-left: 100px;
+  width: 100%;
+  height: auto;
+}
+.judul h2{
+  position: relative;
+  left: 4em;
+  margin-top: 10px;
+  font-family: 'BigNoodle';
+  font-weight: 900;
+    font-size: 2.5vw;
+}
+
+.gallery-main .title-caption{
+	color: #666;
+}
+/* new gallery */
+
+
+.gal-container{
+  margin-top: 50px;
+	padding-left: 80px;
+}
+.box img{
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit:cover;
+}
+.modal-header{
+    background-color: #f27e44;
+}
+.modal-header h5{
+    font-family: BigNoodle;
+    font-size: 1.4vw;
+    font-weight: 800;
+}
+
+.modal-body ul li{
+    text-align: left;
+    font-weight: 500;
+    font-family: montserrat_01;
+    font-size: 0.9vw;
+}
+.modal-body span{
+  text-align: center;
+}
+#lok{
+    color: red; 
+}
+#jam{
+    color: red;
+}
+#harga{
+    color: green;
+}
+.container-modal{
+  width: 500px;
+  height: 350px;
+}
+.container-modal img{
+  padding-top: 15px;
+}
+/*---Isi menu---
+
+
+
