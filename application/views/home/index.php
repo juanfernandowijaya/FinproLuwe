@@ -234,14 +234,14 @@
                         <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
                             <div class="box">
                                 <a href="#" data-toggle="modal" data-target="#<?= $gal['galeri_data_target']; ?>">
-                                    <img src="<?= base_url('assets_home/images/'); ?><?= $gal['galeri_gambar']; ?>" alt="" />
+                                    <img src="<?= base_url('assets_home/images/gallery/'); ?><?= $gal['galeri_gambar']; ?>" alt="" />
                                 </a>
                                 <div class="modal fade" id="<?= $gal['galeri_data_target']; ?>" tabindex="-1" role="dialog">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                             <div class="modal-body">
-                                                <img src="<?= base_url('assets_home/images/'); ?><?= $gal['galeri_gambar']; ?>" alt="" />
+                                                <img src="<?= base_url('assets_home/images/gallery/'); ?><?= $gal['galeri_gambar']; ?>" alt="" />
                                             </div>
                                             <div class="col-md-12 description">
                                                 <h4><?= $gal['galeri_deskripsi']; ?></h4>

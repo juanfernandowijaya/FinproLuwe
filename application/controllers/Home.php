@@ -3,12 +3,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
-    // public function __construct()
-    // {
-    //    parent::__construct();
-    //   if_login();
-    // }
-
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation');
+    }
     public function index()
     {
         if ($this->session->userdata('email')) {
@@ -86,6 +85,7 @@ class Home extends CI_Controller
         if ($this->form_validation->run() == false) {
             $this->load->view('home/detail_produk', $data);
         } else {
+            $email = $this->input->post('email');
             $data = [
                 'nama_makanan' => $this->input->post('nama_makanan'),
                 'order_date' => $this->input->post('order_date'),
@@ -95,6 +95,7 @@ class Home extends CI_Controller
                 'order_alamat' => $this->input->post('pesanAlamat'),
             ];
             $this->db->insert('user_order', $data);
+            //$this->_sendEmail('makanan', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
             Order Berhasil!! </div>');
             redirect('home/detail_MakananTradisional');
@@ -151,6 +152,42 @@ class Home extends CI_Controller
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
             Order Berhasil!! </div>');
             redirect('home/detail_produk_oleh');
+        }
+    }
+
+    private function _sendEmail($type, $data)
+    {
+        $config = array(
+            'protocol'  => 'smtp',
+            'smtp_host' => 'ssl://smtp.googlemail.com',
+            'smtp_user' => 'juanfinpro007@gmail.com',
+            'smtp_pass' => 'Jere7181',
+            'smtp_port' => 465,
+            'mailtype'  => 'html',
+            'charset'   => 'utf-8',
+            'newline'   => "\r\n"
+        );
+        $this->load->library('email', $config);
+        $this->email->from('juanfinpro007@gmail.com', 'Luwe');
+
+        $this->email->to($this->input->post('email'));
+
+        var_dump($this->input->post('email'));
+        die;
+
+        if ($type == 'makanan') {
+            $this->email->subject('Thank you for your Purchase');
+            $this->email->message('Click this link to View Order : <a href="' . base_url() . 'user/order?email=' . $this->input->post('email') . '&id=' . '">Order Confirmation</a>');
+        } else if ($type == 'minuman') {
+            $this->email->subject('Account Reset Password');
+        } else if ($type == 'oleh_oleh') {
+            $this->email->subject('Account Reset Password');
+        }
+        if (!$this->email->send()) {
+            echo $this->email->print_debugger();
+            die;
+        } else {
+            return true;
         }
     }
 }

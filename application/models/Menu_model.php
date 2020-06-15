@@ -11,6 +11,13 @@ class Menu_model extends CI_Model
                 ";
         return $this->db->query($query)->result_array();
     }
+    public function getUserName()
+    {
+        $query = "SELECT `user`.`name`,`user_order`.*
+                    FROM `user` JOIN `user_order`
+                    ON `user`.`id` = `user_order`.id_user ";
+        return $this->db->query($query)->result_array();
+    }
     public function DeleteSubMenu()
     {
         $query = "SELECT `user_sub_menu`.*,`user_menu`.`menu` 
