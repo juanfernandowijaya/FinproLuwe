@@ -15,7 +15,7 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nama User</th>
+                        <th scope="col">Id User</th>
                         <th scope="col">Nama Order</th>
                         <th scope="col">Tanggal Order</th>
                         <th scope="col">Order Deskripsi</th>
@@ -28,7 +28,7 @@
                     <?php foreach ($userName as  $or) : ?>
                         <tr>
                             <th scope="row"><?= $i; ?></th>
-                            <td><?= $or['name']; ?></td>
+                            <td><?= $or['id_user']; ?></td>
                             <td><?= $or['nama_makanan']; ?></td>
                             <td><?= $or['order_date']; ?></td>
                             <td><?= $or['order_des']; ?></td>
@@ -36,8 +36,8 @@
                             <td><?= $or['order_alamat']; ?></td>
                             <td>
                                 <!-- <a href="?= base_url('admin/roleaccess/') . $r['id']; ?>" class="badge badge-pill badge-warning" disabled>Access</a>-->
-                                <a href="<?= base_url('admin/deleteOr/' . $or['id_order']);  ?>" class="badge badge-pill badge-danger" onclick="return confirm('yakin?? Order yang terhapus tidak dapat dikembalikan!!')">Process Order</a>
-                                <a href="<?= base_url('merchant/cancelOrder/' . $or['id_order']);  ?>" class="badge badge-pill badge-danger" onclick="return confirm('yakin??')">Cancel Order</a>
+                                <a href="<?= base_url('admin/deleteOr/' . $or['id_order']);  ?>" class="badge badge-pill badge-success" onclick="return confirm('yakin?? Order yang terhapus tidak dapat dikembalikan!!')">Process Order</a>
+                                <a href="<?= base_url('merchant/cancelOrder/' . $or['id_order']);  ?>" class="badge badge-pill badge-danger" onclick="return confirm('yakin?? Order yang terhapus tidak dapat dikembalikan!!')">Cancel Order</a>
                             </td>
                         </tr>
                         <?php $i++; ?>

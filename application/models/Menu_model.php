@@ -18,6 +18,13 @@ class Menu_model extends CI_Model
                     ON `user`.`id` = `user_order`.id_user ";
         return $this->db->query($query)->result_array();
     }
+    public function getMerchantOrder()
+    {
+        $query = "SELECT `luwe_tradisional`.`id`,`user_order`.*
+                    FROM `luwe_tradisional` JOIN `user_order`
+                    ON `luwe_tradisional`.`id` = `user_order`.`merchant_id` ";
+        return $this->db->query($query)->result_array();
+    }
     public function DeleteSubMenu()
     {
         $query = "SELECT `user_sub_menu`.*,`user_menu`.`menu` 

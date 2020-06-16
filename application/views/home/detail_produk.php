@@ -139,6 +139,9 @@
                                                                             <div class="form-group">
                                                                                 <input type="text" class="form-control" id="nama_makanan" name="nama_makanan" value="<?= $getT['nama_makanan'];  ?>" hidden>
                                                                             </div>
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="form-control" id="merchant_id" name="merchant_id" value="<?= $getT['id'];  ?>" hidden>
+                                                                            </div>
 
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>

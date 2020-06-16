@@ -93,8 +93,10 @@ class Home extends CI_Controller
                 'order_des' => $this->input->post('pesanMinuman'),
                 'order_time' => $this->input->post('pesanTanggal'),
                 'order_alamat' => $this->input->post('pesanAlamat'),
+                'merchant_id' => $this->input->post('merchant_id')
             ];
             $this->db->insert('user_order', $data);
+            $this->db->insert('user_order_cancel', $data);
             //$this->_sendEmail('makanan', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
             Order Berhasil!! </div>');
