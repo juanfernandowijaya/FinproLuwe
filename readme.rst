@@ -27,6 +27,8 @@ Apa yang saya pelajari
 *******************
 Screen Shoot
 *******************
+####
+Landing Page
+![landing](./luwe img/gambar1.png)
 
-PHP version 5.6 or newer is recommended.
 
