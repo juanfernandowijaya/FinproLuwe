@@ -1,6 +1,6 @@
-###################
-Luwe
-###################
+
+## Luwe
+
 
 Luwe adalah aplikasi kuliner yang berasal dari malang
 yang bertujuan untuk memudahkan masyarakat yang berasal dari luar malang
@@ -8,7 +8,7 @@ untuk mencari dan melakukan booking kuliner dengan mudah
 
 
 *******************
-Teknologi yang Digunakan
+## Teknologi yang Digunakan
 *******************
 
 -  HTML
@@ -17,7 +17,7 @@ Teknologi yang Digunakan
 -  Code Igniter 3
 -  Bootstrap
 **************************
-Apa yang saya pelajari
+## Apa yang saya pelajari
 **************************
 
 - Membuat web dengan menggunakan framework codeigniter 3.
@@ -25,7 +25,7 @@ Apa yang saya pelajari
 - Mengatur dan menyesuaikan tampilan Web sesuai dengan MOCKUP.
 
 *******************
-Screen Shoot
+## Screen Shoot
 *******************
 ####
 Landing Page
