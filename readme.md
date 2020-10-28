@@ -27,8 +27,7 @@ untuk mencari dan melakukan booking kuliner dengan mudah
 *******************
 ## Screen Shoot
 *******************
-####
-Landing Page
+#### Landing Page
 ![landing](./luwe img/gambar1.png)
 
 
