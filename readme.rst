@@ -1,23 +1,20 @@
 ###################
-What is CodeIgniter
+Luwe
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Luwe adalah aplikasi kuliner yang berasal dari malang
+yang bertujuan untuk memudahkan masyarakat yang berasal dari luar malang
+untuk mencari dan melakukan booking kuliner dengan mudah
+
 
 *******************
-Release Information
+Technologies Used
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
+-  `HTML
+-  `CSS
+-  `PHP
+-  `Code Igniter 3
 **************************
 Changelog and New Features
 **************************
